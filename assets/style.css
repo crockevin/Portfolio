@@ -32,7 +32,7 @@ li {
 
 }
 
- a {
+#navbar a {
     text-decoration: none;
     color: beige;
     font-size: 150%;
@@ -48,30 +48,72 @@ li {
 #About-me img {
     height: 450px;
 }
-#My-work{
+
+#My-work {
+    align-content: center;
     padding-bottom: 1rem;
 }
-#My-work h2{
-    position: relative;
+
+#My-work h2 {
     font-size: 150%;
-    bottom: 1.75rem;
- 
+    padding: 1.5rem;
+
 }
-footer{
+
+#work-app {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+
+}
+#work-app a{
+    text-decoration: none;
+    color: black;
+
+}
+.app-set h3 {
+    position: relative;
+    bottom: 1.5rem;
+}
+
+#img1 img{
+    width: 400px;
+    height: 85%;
+}
+
+footer {
     background-color: beige;
     padding: 10px;
 }
-footer h2{
+
+footer h2 {
     font-size: 150%;
     padding: 0.5rem;
 }
-footer ul{
+
+footer ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    gap: 25px;
+}
+
+footer ul li {
+    border-radius: 0;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: beige;
+    font-size: 25px;
 }
 
 @media screen and (max-width: 768px) {
+    h1 {
+        text-align: center;
+    }
+
     #navbar {
         position: static;
         flex-direction: column;
@@ -83,4 +125,5 @@ footer ul{
     #About-me img {
         height: 300px;
     }
+
 }
